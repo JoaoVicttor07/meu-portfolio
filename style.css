@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font: "Raleway", sans-serif;
+    --font-color: #464646;
+    --bg-color-primaria: #F5F5F5;
+    --bg-color-secundaria: #EAF2FD;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* aqui está separado os elementos gerais do código com valores que foram dados sem que precisem ter uma classe */
+
+body{
+    background-color: var(--bg-color-primaria);
+    font-family: var(--font);
+    color: var(--font-color);
+}
+
+section{
+    padding: 32px 152px 0 152px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Sessão do menu */
+
+.menu{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__nome{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu__nav__links{
+    display: flex;
+    gap: 32px;
+}
+
+/*
+.menu__nav__links__lista{
+    
+} */
+
+
+/* Sessão de apresentação */
+
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+.apresentacao__textos{
+
+} */
+
+.apresentacao__links{
+    display: flex;
+    gap: 32px;
+}
+
+.apresentacao__links img{
+    margin-left: 5px;
+}
+
+
+.apresentacao__textos__titulo{
+    font-size: 55px;
+}
+
+.apresentacao__textos__paragrafo{
+    margin: 24px 0 24px 0;
+    font-size: 25px;
+    width: 90%;
+}
+
+.apresentacao__foto{
+    border-radius: 50%;
+    width: 368px;
+    height: 368px;
+}
+
+/* Sessão sobre mim */
+
+.bio{
+    margin-top: 2%;
+    padding: 32px 152px 32px 152px;
+    background-color: var(--bg-color-secundaria);
+}
+
+
+.bio img{
+    margin-top: 1%;
+}
+
+.bio__text h2{
+    font-size: 2rem;
+}
+
+.bio__text p{
+    margin-top: 1%;
+}
+
+.formacao{
+    background-color: var(--bg-color-secundaria);
+}
+
+/* Sessão Skills */
+
+.skills__titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.skills{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.skills__HTML{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.skills__HTML img{
+    order: 1;
+    width: 24px;
+    height: 28px;
+}
+
+.skills__JS{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.skills__JS img{
+    order: 1;
+    width: 28px;
+    height: 28px;
+}
+
+.skills__PHP{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.skills__PHP img{
+    order: 1;
+    width: 40px;
+    height: 22px;
+}
+.skills__node{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.skills__node img{
+    order: 1;
+    width: 40px;
+    height: 26px;
+}
+
+.skills__react{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.skills__react img{
+    order: 1;
+    width: 32px;
+    height: 30px;
+}
+
+.skills__css{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.skills__css img{
+    order: 1;
+    width: 22px;
+    height: 36px;
+}
+
+/* Sessão Skills */
+
+.container-hobbies{
+    padding-bottom: 88px;
+}
+
+.hobbies_titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hobbies__games{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.hobbies__games img{
+    order: 1;
+    width: 25%;
+    height: 25%;
+}
+
+.hobbies__musica{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.hobbies__musica img{
+    order: 1;
+    width: 25%;
+    height: 25%;
+}
+
+.hobbies__malhar{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.hobbies__malhar img{
+    order: 1;
+    width: 25%;
+    height: 25%;
+}
+
+.hobbies__ler{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.hobbies__ler img{
+    order: 1;
+    width: 25%;
+    height: 25%;
+}
+
+.hobbies__videos{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.hobbies__videos img{
+    order: 1;
+    width: 25%;
+    height: 25%;
+}
+
+.hobbies__caminhada{
+    padding: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
+.hobbies__caminhada img{
+    order: 1;
+    width: 25%;
+    height: 25%;
+}
+
+/* Formação */
+
+.container-formacao{
+    background-color: var(--bg-color-secundaria);
+}
+
+.formacao_titulo{
+    margin-top: 82px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.formacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.formacao__unp__bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 368px;
+    height: 286px;
+}
+
+#logoUNP{
+    width: 50%;
+    height: 58%;
+}
+
+.formação__unp__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 8px;
+}
+
+.formação__unp__texto h4{
+    font-size: 22px;
+}
+
+.formacao__one__bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 368px;
+    height: 286px;
+}
+
+.formacao__one__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 8px;
+}
+
+.formacao__one__texto h4{
+    font-size: 22px;
+}
+
+/* Experiência profissional */
+
+.exp__titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.exp{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.exp__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exp__texto__botoes{
+    display: flex;
+    gap: 16px;
+}
+
+#repositorio{
+    padding: 15px 15px 15px 15px;
+    border: solid 1px #2A7AE4;
+    color: #2A7AE4;
+}
+
+#demo{
+    padding: 15px 15px 15px 15px;
+    background-color: #2A7AE4;
+    color: white;
+}
+
+/* Rodapé */
+
+.rodape{
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
