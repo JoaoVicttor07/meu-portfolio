@@ -349,6 +349,7 @@ ul{
 /* Formação */
 
 .container-formacao{
+    padding-bottom: 32px;
     background-color: var(--bg-color-secundaria);
 }
 
@@ -420,33 +421,103 @@ ul{
     margin-bottom: 32px;
 }
 
-.exp{
+.exp__decodificador{
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.exp__texto{
+.exp__decodificador__texto{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.exp__texto__botoes{
+.exp__decodificador__texto__botoes{
     display: flex;
     gap: 16px;
 }
 
-#repositorio{
+/* aqui são os botões gerais de repositorio e demos */
+
+.repositorio{
     padding: 15px 15px 15px 15px;
     border: solid 1px #2A7AE4;
     color: #2A7AE4;
 }
 
-#demo{
+.demo{
     padding: 15px 15px 15px 15px;
     background-color: #2A7AE4;
     color: white;
+}
+
+/* ----------------------------------------------- */
+
+.container-exp{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.exp__numero-secreto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.exp__numero-secreto__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exp__numero-secreto__botoes{
+    display: flex;
+    gap: 16px;
+}
+
+#numeroSecreto{
+    width: 760px;
+    height: 414px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.exp__alura-play{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.exp__alura-play__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exp__alura-play__texto__botoes{
+    display: flex;
+    gap: 8px;
+}
+
+#alura-play{
+    width: 760px;
+    height: 414px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+/* Formulário */
+
+.formulario{
+    display: flex;
+    background-color: var(--bg-color-secundaria);
+    gap: 8px;
+}
+
+.formulario__texto h3{
+    margin-bottom: 8px;
+    font-size: 32px;
 }
 
 /* Rodapé */
