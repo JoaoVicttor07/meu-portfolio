@@ -17,12 +17,12 @@
         </header>
         <nav class="menu__nav">
             <ul class="menu__nav__links">
-                <li class="menu__nav__links__lista"><a href="#">Sobre mim</a></li>
-                <li class="menu__nav__links__lista"><a href="#">Skills</a></li>
-                <li class="menu__nav__links__lista"><a href="#">Projetos</a></li>
-                <li class="menu__nav__links__lista"><a href="#">Hobbies</a></li>
-                <li class="menu__nav__links__lista"><a href="#">Formação</a></li>
-                <li class="menu__nav__links__lista"><a href="#"><strong>joaovictorsdc07@gmail.com</strong></a></li>
+                <li class="menu__nav__links__lista"><a href="#sobreMim">Sobre mim</a></li>
+                <li class="menu__nav__links__lista"><a href="#skills">Skills</a></li>
+                <li class="menu__nav__links__lista"><a href="#hobbies">Hobbies</a></li>
+                <li class="menu__nav__links__lista"><a href="#formacao">Formação</a></li>
+                <li class="menu__nav__links__lista"><a href="#projetos">Projetos</a></li>
+                <li class="menu__nav__links__lista"><a href="#contato"><strong>joaovictorsdc07@gmail.com</strong></a></li>
             </ul>
         </nav>
     </section>
@@ -45,7 +45,7 @@
 
     <!--Sessão sobre mim-->
 
-    <section class="bio">
+    <section id="sobreMim" class="bio">
         <div class="bio__text">
             <h2>Sobre mim</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -56,7 +56,7 @@
 
     <!--Sessão Skils-->
 
-    <section class="container">
+    <section id="skills" class="container">
         <header class="skills__titulo">
             <h3>Skills</h3>
         </header>
@@ -97,7 +97,7 @@
 
     <!--Sessão hobbies-->
 
-    <section class="container-hobbies">
+    <section id="hobbies" class="container-hobbies">
         <header class="hobbies_titulo">
             <h3>Hobbies</h3>
         </header>
@@ -141,7 +141,7 @@
     <!--Sessão formação academica-->
 
     <section class="container-formacao">
-        <header class="formacao_titulo">
+        <header id="formacao" class="formacao_titulo">
             <h3>Formação Acadêmica</h3>
         </header>
 
@@ -176,7 +176,7 @@
 
     <!--Sessão Experiência profissional-->
 
-    <section class="container-exp">
+    <section id="projetos" class="container-exp">
         <header class="exp__titulo">
             <h3>Experiência profissional</h3>
         </header>
@@ -242,7 +242,7 @@
 
     <!--Sessão Formulário para contato-->
 
-    <section class="formulario">
+    <section id="contato" class="formulario">
         <div>
             <img src="/images/Foto telefone.png" alt="">
         </div>
@@ -254,6 +254,32 @@
                 <p>Quer entrar em contato comigo?</p>
                 <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             </div>
+            
+            <form action="" method="post">
+
+                <div class="formulario__nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Ex: João Silveira">
+                </div>
+
+                <div class="formulario__email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Ex: silveira1259@gmail.com">
+                </div>
+
+                <div class="formulario__assunto">
+                    <label for="assunto"></label>
+                    <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+                </div>
+
+                <div class="formulario__mensagem">
+                    <label for="mensagem"></label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                </div>
+    
+            </form>
+
+            <button class="botao-form">Enviar mensagem</button>
             
         </div>
     </section>

@@ -10,6 +10,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* aqui está separado os elementos gerais do código com valores que foram dados sem que precisem ter uma classe */
@@ -510,9 +511,12 @@ ul{
 /* Formulário */
 
 .formulario{
+    margin-top: 32px;
+    padding-top: 128px;
+    padding-bottom: 65px;
     display: flex;
     background-color: var(--bg-color-secundaria);
-    gap: 8px;
+    gap: 16px;
 }
 
 .formulario__texto h3{
@@ -520,10 +524,95 @@ ul{
     font-size: 32px;
 }
 
+.formulario__texto p{
+    font-weight: 500;
+}
+
+form{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.formulario__nome{
+    background-color: white;
+    padding: 7px 12px;
+    box-shadow: 0px 1px 1px grey;
+    border-radius: 5px;
+}
+
+.formulario__nome input{
+    margin-top: 4px;
+}
+
+/* valores gerais pra label, input e textarea do formulario */
+
+label{
+    display: block;
+    font-size: 12px;
+}
+
+input{
+    width: 100%;
+    font-family: var(--font);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+textarea{
+    font-family: var(--font);
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+    height: 156px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px grey;   
+}
+
+/* --------------------------------------------------*/
+
+.formulario__email{
+    background-color: white;
+    padding: 7px 12px;
+    box-shadow: 0px 1px 1px grey;
+    border-radius: 3px;
+}
+
+#assunto{
+    padding: 16px 12px;
+    box-shadow: 0px 1px 1px grey;
+}
+
+.formulario__email input{
+    margin-top: 4px;
+}
+
+.botao-form{
+    background-color: #2A7AE4;
+    padding: 1rem;
+    font-family: var(--font);
+    color: white;
+    border: none;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.botao-form:hover{
+    background-color: #5595E9;
+    transition: 0.2s
+}
+
 /* Rodapé */
 
 .rodape{
-    padding: 0;
+    padding: 1% 0px 1% 0px;
     position: relative;
     text-align: center;
 }
