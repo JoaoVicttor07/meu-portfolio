@@ -33,5 +33,8 @@ Este é um projeto pessoal desenvolvido para mostrar meu portfólio online. Ele 
   </li>
 </ol>
 
+# Deploy
+Caso queira dar uma olhada, pode acessar clicando aqui: https://meu-portfolio-three-steel.vercel.app/
+
 # Contribuição
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
