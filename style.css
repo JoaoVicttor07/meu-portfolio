@@ -552,6 +552,12 @@ form{
     border-radius: 5px;
 }
 
+.erro{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
 .formulario__nome input{
     margin-top: 4px;
 }
@@ -561,6 +567,11 @@ form{
 label{
     display: block;
     font-size: 12px;
+    color: #999;
+}
+
+.label-active{
+    color: #2A7AE4;
 }
 
 input{
@@ -603,7 +614,7 @@ textarea{
     margin-top: 4px;
 }
 
-.botao-form{
+.botaoForm{
     background-color: #2A7AE4;
     padding: 1rem;
     font-family: var(--font);
@@ -613,9 +624,20 @@ textarea{
     cursor: pointer;
 }
 
-.botao-form:hover{
+.botaoForm:disabled{
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.botaoForm:not(:disabled):hover{
     background-color: #5595E9;
-    transition: 0.2s
+    transition: 0,2s;
+}
+
+#mensagemEnviada{
+    color: green;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 /* Rodapé */
@@ -843,7 +865,7 @@ textarea{
         font-size: 1rem;
     }
 
-    .botao-form{
+    .botaoForm{
         margin-top: 32px;
     }
 

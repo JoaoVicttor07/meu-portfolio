@@ -32,7 +32,7 @@
     <section class="apresentacao">
         <div class="apresentacao__textos">
             <h1 class="apresentacao__textos__titulo">Olá, meu nome é João Victor e construo páginas Web</h1>
-            <p class="apresentacao__textos__paragrafo">Estou cursando Ciência da Computação e participando do programa ONE da Oracle em parceria com a Alura para aprimorar minhas habilidades em tecnologia.</p>
+            <p class="apresentacao__textos__paragrafo">Brasileiro, 24 anos e apaixonado por tecnologia.</p>
             <ul class="apresentacao__links">
                 <li><a href="https://github.com/JoaoVicttor07">Github</a><img class="setinha" src="/images/Setinha.png" alt=""></li>
                 <li><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-santos-da-costa-3835b0272/">Linkedin</a><img class="setinha" src="/images/Setinha.png" alt=""></li>
@@ -48,8 +48,8 @@
     <section id="sobreMim" class="bio">
         <div class="bio__text">
             <h2>Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus. orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Desde muito jovem, sempre fui fascinado pela tecnologia, passando horas explorando computadores e consoles de videogames. Esse interesse inicial evoluiu para uma habilidade valiosa, complementada pela minha ótima fluência em inglês, que me permite acessar recursos e aprender continuamente. Atualmente, trabalho como operador backoffice em uma empresa de telecomunicações, onde ganho experiência prática em operações empresariais e suporte técnico. Paralelamente, estou cursando Ciência da Computação, o que está me proporcionando uma base sólida para alcançar meu objetivo de me tornar um programador.</p>
+            <p>Meu grande objetivo é me inserir na área de programação e construir uma carreira gratificante nesse campo. Estou determinado a adquirir as competências necessárias para criar soluções inovadoras e eficazes, contribuindo significativamente para o avanço da tecnologia. Com a combinação de minha experiência profissional, formação acadêmica e paixão por tecnologia, acredito que estou no caminho certo para realizar esse sonho e viver da programação.</p>
         </div>
         <img class="bio__img" src="/images/image 4.png" alt="">
     </section>
@@ -255,31 +255,37 @@
                 <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             </div>
             
-            <form action="" method="post">
+            <form id="contatoForm" action="" method="post">
 
                 <div class="formulario__nome">
-                    <label for="nome">Nome</label>
+                    <label for="nome" id="labelNome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Ex: João Silveira">
+                    <small id="nomeErro" class="erro"></small>
                 </div>
 
                 <div class="formulario__email">
-                    <label for="email">Email</label>
+                    <label for="email" id="labelEmail">Email</label>
                     <input type="text" name="email" id="email" placeholder="Ex: silveira1259@gmail.com">
+                    <small id="emailErro" class="erro"></small>
                 </div>
 
                 <div class="formulario__assunto">
                     <label for="assunto"></label>
                     <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+                    <small id="assuntoErro" class="erro"></small>
                 </div>
 
                 <div class="formulario__mensagem">
                     <label for="mensagem"></label>
                     <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                    <small id="mensagemErro" class="erro"></small>
                 </div>
+
     
             </form>
 
-            <button class="botao-form">Enviar mensagem</button>
+            <button id="enviarBtn" type="submit" class="botaoForm" disabled >Enviar mensagem</button>
+            <div id="mensagemEnviada" style="display: none;" >Sua mensagem foi enviada com sucesso!</div>
             
         </div>
     </section>
@@ -288,5 +294,7 @@
         <p>Desenvolvido por João Victor</p>
         <p>2024</p>
     </footer>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
